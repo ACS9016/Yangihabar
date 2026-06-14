@@ -4,7 +4,7 @@ import logging
 from datetime import datetime
 import httpx
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from telegram import Bot
+ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
